@@ -5,8 +5,7 @@ This repository presents a conceptual framework for **Flow-Oriented Programming 
 ---
 
 ## How It Works
-
-Flow-Oriented Programming encourages thinking about computation in terms of flows between data and functions. Functions are units of work that can modify the state by interacting with data through specific addresses, which can be concrete or abstract. These concepts can be arranged into **layers** that create the **context** for a particular execution flow. A flow of execution completes when the context is fully realized.
+Flow-Oriented Programming views computation as flows between **functions** and **data**, both of which can be **abstract** or **concrete**. Functions operate on data through specific **addresses**, organized into **layers** that define the execution **context**. The flow completes when the context is fully established.
 
 ## Visualizations
 
