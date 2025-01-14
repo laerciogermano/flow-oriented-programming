@@ -9,6 +9,10 @@ This repository presents a conceptual framework for **Flow-Oriented Programming 
 ### 1. A flow of execution consists of data and functions.  
 ![Flow of execution](./images/image1.png)
 
+```javascript
+    const a;
+    function f(context){}
+
 ---
 
 ### 2. Data is a unit of information.  
