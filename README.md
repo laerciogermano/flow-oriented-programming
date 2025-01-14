@@ -236,23 +236,20 @@ The images in this repository help visualize each of the concepts in **Flow-Orie
    }
 
 ```
-
 ---
 
-### 16. Every input forms a layer.  
-![Every Inpit is a layer](./images/image16.png)
-
----
-
-### 17. A layer is a replaceable unit.  
+### 16. A layer is a replaceable unit.  
 ![Replaceable layer](./images/image17.png)
 
+---
+
+### 17. Every input forms a context layer.  
+![Every Inpit is a layer](./images/image16.png)
 
 ---
 
 ### 18. Different layers form a new layer.  
 ![Layers forming a context](./images/image18.png)
-
 
 ---
 
