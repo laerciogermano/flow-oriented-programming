@@ -240,6 +240,7 @@ The images in this repository help visualize each of the concepts in **Flow-Orie
 ---
 
 ### 16. Every input forms a layer.  
+![Every Inpit is a layer](./images/image16.png)
 
 ---
 
