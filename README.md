@@ -250,7 +250,7 @@ The images in this repository help visualize each of the concepts in **Flow-Orie
 
 ---
 
-### 18. Different layers form a context.  
+### 18. Different layers form a new layer.  
 ![Layers forming a context](./images/image18.png)
 
 
