@@ -236,6 +236,7 @@ The images in this repository help visualize each of the concepts in **Flow-Orie
    }
 
 ```
+
 ---
 
 ### 16. Every input forms a layer.  
@@ -243,14 +244,14 @@ The images in this repository help visualize each of the concepts in **Flow-Orie
 
 ---
 
-### 17. Different layers form a context.  
-![Layers forming a context](./images/image18.png)
+### 17. A layer is a replaceable unit.  
+![Replaceable layer](./images/image17.png)
 
 
 ---
 
-### 18. A layer is a replaceable unit.  
-![Replaceable layer](./images/image17.png)
+### 18. Different layers form a context.  
+![Layers forming a context](./images/image18.png)
 
 
 ---
