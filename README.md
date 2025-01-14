@@ -239,7 +239,7 @@ The images in this repository help visualize each of the concepts in **Flow-Orie
 
 ---
 
-### 16. Every input forms a context layer.  
+### 16. Input forms a context layer.  
 ![Every Inpit is a layer](./images/image16.png)
 
 ---
@@ -249,7 +249,7 @@ The images in this repository help visualize each of the concepts in **Flow-Orie
 
 ---
 
-### 18. Different layers combined form a new layer.  
+### 18. Different layers can be combined to form new layers. 
 ![Layers forming a context](./images/image18.png)
 
 ---
