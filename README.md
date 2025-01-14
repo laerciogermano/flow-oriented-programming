@@ -253,7 +253,7 @@ The images in this repository help visualize each of the concepts in **Flow-Orie
 
 ---
 
-### 19. The flow execution occurs when the context is complete.  
+### 19. The flow execution occurs when the layer is complete.  
 ![Flow execution](./images/image19.png)
 
 ```javascript
@@ -280,6 +280,9 @@ The images in this repository help visualize each of the concepts in **Flow-Orie
    }
 ```
 ---
+
+### 20. A layer with a complete context is equivalent to a new context for another layer.
+![Complete Layers are context](./images/image20.png)
 
 ## Contributing
 
