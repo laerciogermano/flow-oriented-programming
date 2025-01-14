@@ -194,7 +194,7 @@ The images in this repository help visualize each of the concepts in **Flow-Orie
 ```javascript
 
    import f1 from './f1';
-   import f2 from './f2’;
+   import f2 from './f2';
    import a  from './a';
 
    export default async function f(context) {
