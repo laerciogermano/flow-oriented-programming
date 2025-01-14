@@ -129,6 +129,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For any questions or suggestions, please open an issue or contact us via [email@example.com](mailto:email@example.com).
+For any questions or suggestions, please open an issue or contact us via [email@example.com](mailto:laerciogermanoo@gmail.com).
 
 ---
