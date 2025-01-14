@@ -240,8 +240,6 @@ The images in this repository help visualize each of the concepts in **Flow-Orie
 ---
 
 ### 16. Every input forms a layer.  
-![Input forms a layer](./images/image16.png)
-
 
 ---
 
