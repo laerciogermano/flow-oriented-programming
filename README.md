@@ -1,6 +1,6 @@
 # Flow-Oriented Programming
 
-This repository introduces the conceptual framework of **Flow**, a paradigm for service-oriented and modular development. Flow emphasizes **service-level** decoupling in **all calls**, ensuring increased compatibility and making every component a **replaceable layer**. By **eliminating redundant concepts** and adopting a **unified development approach**. Flow leverages an innovative **layered architecture** with **ubiquitous language** and **visual representations**, fostering **clarity** and **maintainability** in **software design**. While initially designed for software, the principles of Flow are **applicable across various fields of study**, offering a versatile framework for problem-solving and systematization in **any discipline**, by **anyone**.
+This repository introduces the conceptual framework of **Flow**, a paradigm for **service-oriented** development. Flow emphasizes **service-level** decoupling in **all calls**, ensuring increased compatibility and making every component a **replaceable layer**. By **eliminating redundant concepts** and adopting a **unified development approach**. Flow leverages an innovative **layered architecture** with **ubiquitous language** and **visual representations**, fostering **clarity** and **maintainability** in **software design**. While initially designed for software, the principles of Flow are **applicable across various fields of study**, offering a versatile framework for problem-solving and systematization in **any discipline**, by **anyone**.
 
 ---
 
