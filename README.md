@@ -285,7 +285,7 @@ The images in this repository help visualize each of the concepts in **Flow-Orie
 
 ## Contributing
 
-Feel free to contribute! If you have suggestions, bug fixes, or improvements, please follow these steps:
+Feel free to contribute! If you have suggestions or improvements, please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature-branch`).
