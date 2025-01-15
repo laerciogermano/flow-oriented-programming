@@ -1,6 +1,6 @@
 # Flow-Oriented Programming
 
-This repository presents a conceptual framework for **Flow-Oriented Programming (FOP)**. The idea is to represent execution flows as a combination of **data** and **functions**, where functions manipulate data through defined addresses. Below, we detail the key components of FOP, with visual representations for each concept.
+This repository introduces the conceptual framework of Flow, a paradigm for service-oriented and modular development. Flow emphasizes service-level decoupling in all calls, ensuring increased compatibility and making every component a replaceable layer. By eliminating redundant concepts and adopting a unified development approach, Flow leverages an innovative layered architecture with ubiquitous language and visual representations, fostering clarity and flexibility in software design.
 
 ---
 
@@ -10,7 +10,6 @@ Flow-Oriented Programming views computation as flows between **functions** and *
 ## Visualizations
 
 The images in this repository help visualize each of the concepts in **Flow-Oriented Programming**, showing how data and functions interact within different layers and contexts.
-
 
 ---
 
