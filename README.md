@@ -25,11 +25,6 @@ The images in this repository help visualize each of the concepts in **Flow-Orie
     function f(context){}
 ```
 
-```javascript
-    const a;
-    function f(context){}
-```
-
 ---
 
 ### 2. Data is a unit of information.  
