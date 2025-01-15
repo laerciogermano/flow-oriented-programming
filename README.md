@@ -1,6 +1,6 @@
 # Flow-Oriented Programming
 
-*"Everything flows." – Heraclitus, c. 535 – c. 475 BCE*
+*"Nothing is permanent, except change." – Heraclitus, c. 535 – c. 475 BCE**
 
 This repository introduces the conceptual framework of **Flow**, a paradigm for **service-oriented** development. Flow emphasizes **service-level** decoupling in **all calls**, ensuring increased compatibility and making every component a **replaceable layer**. By **eliminating redundant concepts** and adopting a **one way of development approach**. Flow leverages an innovative **layered architecture** with **ubiquitous language** and **visual representations**, fostering **clarity** and **maintainability** in **software design**. While initially designed for software, the principles of Flow are **applicable across various fields of study**, offering a versatile framework for problem-solving and systematization in **any discipline**, by **anyone**.
 
