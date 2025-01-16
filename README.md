@@ -7,17 +7,25 @@ This repository introduces the conceptual framework of **Flow**, a visual paradi
 ---
 
 ## How It Works
-Flow-Oriented Programming views computation as flows between **functions** and **data**, both of which can be **abstract** or **concrete**. Functions operate on data through specific **addresses**, organized into **layers** that define the execution **context**. The flow completes when the context is fully established.
+The traditional definition of layers in Software Engineering has significant limitations, as it does not consider all objects in Object-Oriented Programming (OOP) as potential layers.
+In the book Clean Architecture, it is emphasized that a good architect should design systems with open layer options, anticipating future separation into services. However, the concept of layers in OOP lacks the broader scope found in other fields, where object concepts and dependency injection are more seamlessly integrated.
+
+In the real world, objects interact naturally due to the same physical laws and can be replaced by others that perform equivalent functions. In traditional software development models, however, many behaviors are not compatible with service-level decoupling, leading to integration challenges, such as the inability to inject dependencies of asynchronous functions into functions that are not designed to handle them.
+
+Flow addresses this issue by enabling complete service-level decoupling, making all components homogeneous. As a result, all layers become compatible for integration and substitution. Inputs are treated as dependency injections and vice versa, so parameters are regarded as layers or replaceable units, whether they represent behavior and/or data.
+
 
 ## Visualizations
 
-The images in this repository help visualize each of the concepts in **Flow-Oriented Programming**, showing how data and functions interact within different layers and contexts.
+*"A picture is worth a thousand words." – Confucius, 552–479 BCE*
+
+Additionally, this repository introduces a visual concept that represents each elementary part of the software, enabling development to be visualized as figures. This approach reduces complexity, enhances maintainability, and makes Flow a powerful tool for systematization and application across different fields of knowledge.
 
 ---
 
 ## Concepts
 
-*"A picture is worth a thousand words." – Confucius, 552–479 BCE*
+
 
 ### 1. A flow of execution consists of data and functions.  
 ![Flow of execution](./images/image1.png)
