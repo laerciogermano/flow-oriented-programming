@@ -1,0 +1,26 @@
+{
+  "name": "flow-oriented-programming",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laerciogermano/flow-oriented-programming.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laerciogermano/flow-oriented-programming/issues"
+  },
+  "homepage": "https://github.com/laerciogermano/flow-oriented-programming#readme",
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/register": "^7.25.9",
+    "jest": "^29.7.0"
+  }
+}
