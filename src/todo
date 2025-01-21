@@ -225,7 +225,7 @@ async function A(context){
   </tr>
   <tr>
     <td>
-      <table bordeA(r="1">
+      <table border="1">
         <tr>
           <td>B</td>
         </tr>

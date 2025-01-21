@@ -290,6 +290,238 @@ Additionally, this repository introduces a visual concept that represents each e
 ### 20. A layer with a complete context is equivalent to a new context for another layer.
 ![Complete Layers are context](./images/image20.png)
 
+
+## FLOW STUDIO
+
+#### 1. Function
+
+```javascript
+async function A(context){}
+```
+
+##### HTML code
+
+```html
+<table border="1">
+  <tr>
+    <td>A</td>
+  </tr>
+</table>
+```
+
+##### Syntax Tree
+
+```JSON
+{
+  "A": []
+}
+```
+
+
+##### Visualization
+
+<table border="1">
+  <tr>
+    <td>A</td>
+  </tr>
+</table>
+
+
+#### 2. Chamada de função
+
+##### Javascript Code
+
+```javascript
+async function A(context){
+  await B(context);
+}
+```
+
+##### HTML Code
+
+```html
+<table border="1">
+  <tr>
+    <td>A</td>
+    <td>
+      <table border="1">
+        <tr>
+          <td>B</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+```
+
+##### Syntax Tree
+
+```JSON
+{
+  "A": [
+    [
+      "B"
+    ]
+  ]
+}
+```
+
+##### Visualization
+
+<table border="1">
+  <tr>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>
+      <table border="1">
+        <tr>
+          <td>B</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+#### 3. Chamada sequencial
+
+##### Javascript Code
+
+```javascript
+async function A(context){
+  await B(context);
+  await C(context);
+}
+```
+
+##### HTML Code
+
+```html
+<table border="1">
+  <tr>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>
+      <table border="1">
+        <tr>
+          <td>B</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>C</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+```
+
+##### Syntax Tree
+
+```JSON
+{
+  "A": [
+    [
+      "B",
+    ],
+    [
+      "C"
+    ]
+  ]
+}
+```
+
+##### Visualization
+
+<table border="1">
+  <tr>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>
+      <table border="1">
+        <tr>
+          <td>B</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>C</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+#### 3. Chamada paralela
+
+##### Javascript Code
+
+```javascript
+async function A(context){
+  await Promise.all([
+    B(context),
+    C(context)
+  ]);
+}
+```
+##### HTML Code
+
+```html
+<table border="1">
+  <tr>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>
+      <table border="1">
+        <tr>
+          <td>B</td>
+        </tr>
+         <tr>
+          <td>C</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+```
+
+##### Syntax Tree
+
+```JSON
+{
+  "A": [
+    [
+      "B",
+      "C",
+    ],
+  ]
+}
+```
+
+##### Visualization
+
+<table border="1">
+  <tr>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>
+      <table border="1">
+        <tr>
+          <td>B</td>
+        </tr>
+         <tr>
+          <td>C</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
 ## Contributing
 
 Feel free to contribute! If you have suggestions or improvements, please follow these steps:
