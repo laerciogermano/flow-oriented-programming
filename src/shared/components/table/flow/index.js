@@ -2,7 +2,7 @@ import createTitleTable from '#shared/components/table/title-table/index.js';
 import createTable from '#shared/components/table/content/index.js';
 
 export default async function generateTabela(context) {
-  const { id, tree, create, append, addClass, createTdContent } = context;
+  const { id, tree, create, append, setMinWidth, createTdContent } = context;
 
   const table = await createTable({
     ...context,
@@ -28,10 +28,10 @@ export default async function generateTabela(context) {
               ...context,
             });
 
-            await addClass({
+            await setMinWidth({
               ...context,
               element: td,
-              value: 'leaf',
+              value: '40px',
             });
 
             await append({
