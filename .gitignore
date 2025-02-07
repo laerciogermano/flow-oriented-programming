@@ -1,5 +1,5 @@
 node_modules
 dist/
-src/shared/data/tree.js
+src/shared/data/tree/_index.js
 !dist/index.html
 package-lock.json

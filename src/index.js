@@ -30,6 +30,8 @@ import onMouseEnter from '#shared/ui/dom/onMouseEnter/index.js';
 import onMouseLeave from '#shared/ui/dom/onMouseLeave/index.js';
 import on from '#shared/services/pub-sub/on/index.js';
 import emit from '#shared/services/pub-sub/emit/index.js';
+import tree from '#shared/data/tree/index.js';
+
 
 (async function main(context) {
   const [
