@@ -19,6 +19,7 @@ export default async function generateTabela(context) {
       const tr = await create({
         ...context,
         type: 'tr',
+        id: line,
       });
 
       for (let columnLine = 0; columnLine < columns.length; columnLine++) {
@@ -26,6 +27,7 @@ export default async function generateTabela(context) {
           if (!tree[line]) {
             const td = await createTdContent({
               ...context,
+              id: line,
             });
 
             await setMinWidth({
@@ -37,7 +39,7 @@ export default async function generateTabela(context) {
             await append({
               ...context,
               parent: tr,
-              child: td,
+              child: td, id: line,
             });
 
           } else {

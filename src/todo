@@ -1,6 +1,7 @@
-- separar códigos em pastas;
-- substituir classes por codigo
-- ajustar layout;
+
+- selecionar elemento
+- criar header com operações?
+- criar opção de adicionar
 - adicionar elemento;
 - remover elemento;
 - gerar código;
@@ -19,3 +20,5 @@
 - aumentar font;
 - diminuir font;
 - live reload;
+- criar forma de dar hover apenas no elemento- criar forma de buscar elemento filho para n colocar todos em cheque
+- criar persistencia de elementos para operações de consulta;

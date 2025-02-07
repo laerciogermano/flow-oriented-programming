@@ -1,16 +1,20 @@
 import createTdContent from '#shared/components/td/content/index.js';
+import eventKeyMouseEnter from '#shared/config/events/ids/mouse-enter/index.js';
+import eventKeyMouseLeave from '#shared/config/events/ids/mouse-leave/index.js';
 
 export default async function createTdBar(context) {
-  const { create, addClass, append, setBackgroundColor, setDisplay, setBorderRadius, setHeight, } = context;
+  const {
+    create,
+    append,
+    setBackgroundColor,
+    setDisplay,
+    setBorderRadius,
+    setHeight,
+    on,
+  } = context;
 
   const td = await createTdContent({
     ...context,
-  });
-
-  await addClass({
-    ...context,
-    element: td,
-    value: 'flow-ceil',
   });
 
   const span = await create({
@@ -40,6 +44,38 @@ export default async function createTdBar(context) {
       value: '#2779d7',
     }),
   ]);
+
+  const eventMouseEnter = await eventKeyMouseEnter({
+    ...context,
+  });
+
+  on({
+    ...context,
+    event: eventMouseEnter,
+    callback: async (context) => {
+      await setBackgroundColor({
+        ...context,
+        element: span,
+        value: 'red',
+      });
+    }
+  });
+
+  const eventMouseLeave = await eventKeyMouseLeave({
+    ...context,
+  });
+
+  on({
+    ...context,
+    event: eventMouseLeave,
+    callback: async (context) => {
+      await setBackgroundColor({
+        ...context,
+        element: span,
+        value: '#2779d7',
+      });
+    }
+  });
 
   await append({
     ...context,

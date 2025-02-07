@@ -1,10 +1,42 @@
 export default async function createTrContent(context) {
-  const { create, append, createTableContent, setBorderLeft, setBorderBottom, setBorderRight, setBorderBottomLeftRadius, setBorderBottomRightRadius, } = context;
+  const {
+    create,
+    append
+  } = context;
 
-  const tr = await create({
+  const [
+    tr,
+    td,
+  ] = await Promise.all([
+    create({
+      ...context,
+      type: 'tr'
+    }),
+    createTd({
+      ...context,
+    }),
+  ]);
+
+  await append({
     ...context,
-    type: 'tr'
+    parent: tr,
+    child: td,
   });
+
+  return tr;
+}
+
+async function createTd(context) {
+  const {
+    create,
+    append,
+    createTableContent,
+    setBorderLeft,
+    setBorderBottom,
+    setBorderRight,
+    setBorderBottomLeftRadius,
+    setBorderBottomRightRadius,
+  } = context;
 
   const td = await create({
     ...context,
@@ -49,11 +81,5 @@ export default async function createTrContent(context) {
     child: table,
   });
 
-  await append({
-    ...context,
-    parent: tr,
-    child: td,
-  });
-
-  return tr;
+  return td;
 }

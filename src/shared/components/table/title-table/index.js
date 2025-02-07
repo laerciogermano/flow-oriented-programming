@@ -3,7 +3,9 @@ import createTrContent from './content/index.js';
 import createTable from '#shared/components/table/content/index.js';
 
 export default async (context) => {
-  const { append } = context;
+  const {
+    append,
+  } = context;
 
   const [
     table,
